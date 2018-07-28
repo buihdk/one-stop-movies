@@ -10,8 +10,8 @@ export default class MovieCard extends React.Component {
   }
   render() {
     let overview = ''
-    if (this.props.overview.length > 190) {
-      overview = this.props.overview.substring(0, 190) + '...'
+    if (this.props.overview.length > 200) {
+      overview = this.props.overview.substring(0, 200) + ' ...'
     } else {
       overview = this.props.overview
     }
@@ -31,7 +31,7 @@ export default class MovieCard extends React.Component {
                 <p className="popularity">{this.props.popularity.toFixed(1)}</p>
                 <p className="release-date">{this.props.release_date}</p>
               </div>
-              <p>{overview}</p>
+              <p className="overview">{overview}</p>
             </div>
           </div>
         </div>

@@ -19,7 +19,7 @@
 }
 .content-wrapper { color: white; padding: 20px; overflow: hidden; }
 .fig-wrapper { display: flex; justify-content: space-between;}
-.movie-title { font-size: 24px; font-weight: bold; color: #dc3545; }
+.movie-title { font-size: 22px; font-weight: bold; color: #dc3545; }
 .movie-title::before { color: #e50914; font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f008"; padding-right: 10px; }
 .popularity::before { color: #f25e09; font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f06d"; padding-right: 10px; }
 .release-date::before { color: #02c66f; font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f017"; padding-right: 10px; }
@@ -78,4 +78,7 @@
 }
 .gradient:hover, .gradient:focus { background-position: right center; }
 
-
+@media (max-width: 576px) { 
+  .movie-title { font-size: 20px; }
+  .fig-wrapper, .overview { font-size: 14px; }
+}
