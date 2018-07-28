@@ -13,12 +13,12 @@ export default class MovieCard extends React.Component {
       <div>
         <div className={`movie-card flip-container ${this.state.isFront ? '' : 'clicked'}`} onClick={() => this.setState({isFront: !this.state.isFront})}>
           <div className="front">
-            <img className="movie-img" src={`https://image.tmdb.org/t/p/w342${this.props.poster_path}`} alt="movie-img" />
+            <img className="movie-img-front" src={`https://image.tmdb.org/t/p/w342${this.props.poster_path}`} alt="movie-img-front" />
             <div className="gradient"/>
-            <h1 className="rating">{this.props.vote_average.toFixed(1)}</h1>
+            <h2 className="rating">{this.props.vote_average.toFixed(1)}</h2>
           </div>          
           <div className="back">
-            <img className="movie-img" src={`https://image.tmdb.org/t/p/w342${this.props.backdrop_path}`} alt="movie-img" />
+            <img className="movie-img-back" src={`https://image.tmdb.org/t/p/w342${this.props.backdrop_path}`} alt="movie-img-back" />
             <div className="content-wrapper">
               <p className="movie-title">{this.props.title}</p>   
               <div className="fig-wrapper">
