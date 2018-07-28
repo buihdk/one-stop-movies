@@ -6,7 +6,7 @@
 .outer-embed-ta {
   width: 500px;
   margin: 100px auto 0;
-  padding-top: 15%;
+  padding-top: 20%;
 }
 .refresh-text { font-weight: light; font-size: 20px; color: #e50914; text-align: center; animation: 12s fadeIn; }
 .refresh-text::before { color: #e50914; font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f008"; padding-right: 10px; }
