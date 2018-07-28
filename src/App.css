@@ -1,0 +1,23 @@
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.outer-embed-ta {
+  width: 500px;
+  margin: 100px auto 0;
+  padding-top: 15%;
+}
+.refresh-text { font-weight: light; font-size: 20px; color: #e50914; text-align: center; animation: 12s fadeIn; }
+.refresh-text::before { color: #e50914; font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f008"; padding-right: 10px; }
+.refresh-text::after { color: #e50914; font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f008"; padding-left: 10px; }
+
+@keyframes fadeIn { 0% {opacity: 0;} 100% {opacity: 1;} }
+@keyframes blink { 0% {opacity: 0;} 50% {opacity: .5;} 100% {opacity: 1;} }
+
+@media (max-width: 576px) { 
+  .outer-embed-ta {
+    padding-top: 60%;
+    width: 100%;
+  }
+}

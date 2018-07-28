@@ -1,0 +1,36 @@
+.search-wrapper {
+  width: 200px;
+  position: relative;
+}
+.search {
+  width: 100px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  color: white;
+  background-color: transparent;
+  background-size: 20px;
+  background-image: url('search-icon.svg');
+  background-position: 5px center; 
+  background-repeat: no-repeat;
+  padding: 3px 10px 3px 30px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+  position: absolute;
+  right: 0;
+  top: -20px;
+}
+.search:focus {
+  width: 100%;
+}
+
+@media (max-width: 576px) { 
+  .search-wrapper {
+    width: 100%;
+  }
+  .search {
+    position: unset;
+    width: 100%;
+    text-align: center;
+  }
+}
