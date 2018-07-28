@@ -18,6 +18,7 @@ Author: **Khoa Bui**
  
 ## List of things that will be implemented:
 - [ ] Infinite Scrolling
+- [ ] Update card to include a 'View More' button in overview that will open a modal
 - [ ] Request an api key from traileraddict to show only feature trailers
 
 ## Demo

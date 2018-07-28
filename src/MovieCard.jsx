@@ -9,6 +9,12 @@ export default class MovieCard extends React.Component {
     }
   }
   render() {
+    let overview = ''
+    if (this.props.overview.length > 190) {
+      overview = this.props.overview.substring(0, 190) + '...'
+    } else {
+      overview = this.props.overview
+    }
     return (
       <div>
         <div className={`movie-card flip-container ${this.state.isFront ? '' : 'clicked'}`} onClick={() => this.setState({isFront: !this.state.isFront})}>
@@ -25,7 +31,7 @@ export default class MovieCard extends React.Component {
                 <p className="popularity">{this.props.popularity.toFixed(1)}</p>
                 <p className="release-date">{this.props.release_date}</p>
               </div>
-              <p>{this.props.overview.substring(0, 200)}</p>
+              <p>{overview}</p>
             </div>
           </div>
         </div>
