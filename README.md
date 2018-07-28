@@ -21,7 +21,7 @@ Author: **Khoa Bui**
 - [ ] Request an api key from traileraddict to show only feature trailers
 
 ## Demo
-https://www.buihdk.com/mini-twitter/
+https://www.buihdk.com/one-stop-movies/
 
 ## License
     © Khoa Bui 2018 
