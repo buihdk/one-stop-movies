@@ -4,6 +4,7 @@ import Navbar from './Navbar';
 import MovieList from './MovieList';
 
 const api_key = "14782eb910d2e42db2ba98769fe3ec58";
+let trailer_id = ((Math.random()*230)+124000).toFixed(0)
 
 class App extends Component {
   constructor(props) {
@@ -16,6 +17,7 @@ class App extends Component {
   }
 
   async componentDidMount() {
+    
     const timeout = ms => new Promise(res => setTimeout(res, ms));
     try {
       let response = await fetch(`https://api.themoviedb.org/3/movie/now_playing?api_key=${api_key}`);
@@ -88,7 +90,6 @@ class App extends Component {
   }
 
   render() {
-    let trailer_id = ((Math.random()*230)+124000).toFixed(0)
     return (
       <div> 
         <Navbar 
