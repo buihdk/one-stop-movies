@@ -53,7 +53,10 @@ class App extends Component {
   async handleUpcoming() {
     try {
       let data = await (await fetch(`https://api.themoviedb.org/3/movie/upcoming?api_key=${api_key}`)).json();
-      this.setState({ movies: data.results });
+      this.setState({ movies: data.results.sort((mov1, mov2) => {
+        if (mov1.release_date > mov2.release_date) return -1;
+        if (mov1.release_date < mov2.release_date) return 1;
+      }) });
     } catch(err) { alert(err) }
   }
 
