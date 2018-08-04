@@ -3,17 +3,17 @@ import './MovieCard.css';
 
 export default class MovieCard extends React.Component {
   constructor(props) {
-    super(props)
+    super(props);
     this.state = {
       isFront: true
-    }
+    };
   }
   render() {
-    let overview = ''
+    let overview = '';
     if (this.props.overview.length > 200) {
-      overview = this.props.overview.substring(0, 200) + ' ...'
+      overview = this.props.overview.substring(0, 200) + ' ...';
     } else {
-      overview = this.props.overview
+      overview = this.props.overview;
     }
     return (
       <div>
@@ -36,6 +36,6 @@ export default class MovieCard extends React.Component {
           </div>
         </div>
       </div>
-    )
+    );
   }
 }
