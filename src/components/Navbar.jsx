@@ -1,5 +1,5 @@
-import React from "react";
-import "./Navbar.css";
+import React from 'react';
+import '../styles/Navbar.css';
 import Toggle from './Toggle';
 import Sort from './Sort';
 import Search from './Search';
@@ -32,7 +32,7 @@ export default class Navbar extends React.Component {
                 <Sort handleSelectChange={this.props.handleSelectChange} />
               </li>
               <li className="nav-item pt-3">
-                <button className="bttn btn-refresh" onClick={() => {window.location.reload()}}>Refresh</button>
+                <button className="bttn btn-refresh" onClick={() => { window.location.reload(); }}>Refresh</button>
               </li>
               <li className="nav-item pt-3">
                 <button className="bttn btn-upcoming" onClick={this.props.handleUpcoming}>
@@ -48,6 +48,6 @@ export default class Navbar extends React.Component {
           </div>
         </div>
       </nav>
-    )
+    );
   }
 } 

@@ -1,5 +1,5 @@
-import React from "react";
-import "./Toggle.css";
+import React from 'react';
+import '../styles/Toggle.css';
 
 export default class Toggle extends React.Component {
   render() {

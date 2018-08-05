@@ -1,5 +1,5 @@
 import React from 'react';
-import './MovieCard.css';
+import '../styles/MovieCard.css';
 
 export default class MovieCard extends React.Component {
   constructor(props) {

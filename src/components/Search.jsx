@@ -1,5 +1,5 @@
 import React from 'react';
-import './Search.css';
+import '../styles/Search.css';
 
 export default class Search extends React.Component {
   render() {
@@ -8,6 +8,6 @@ export default class Search extends React.Component {
         <input type="text" placeholder="Search for a movie" className="search"
           onChange={(e) => this.props.handleInputChange(e.target.value)}/>
       </div>
-    )
+    );
   }
 }
